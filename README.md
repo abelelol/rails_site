@@ -14,7 +14,7 @@
 - If you want to populate the blog posts:
   - Create your own [Github API key](https://github.com/blog/1509-personal-api-tokens) with the `public_repo` permission.
   - Add the token to the `.env` file under `GITHUB_API_KEY`.
-  - Run `docker-compose run bundle exec rake posts:import`
+  - Run `docker-compose run rails bundle exec rake posts:import`
 - Run `docker-compose up`.
 - Wait for the Docker images to start up.
 - Go to [localhost:3000](http://localhost:3000).
