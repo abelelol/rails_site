@@ -1,0 +1,59 @@
+{
+  "name": "rails_site",
+  "scripts": {
+  },
+  "env": {
+    "GITHUB_API_KEY": {
+      "required": true
+    },
+    "LANG": {
+      "required": true
+    },
+    "MAILCHIMP_API_KEY": {
+      "required": true
+    },
+    "MAILCHIMP_LIST_ID": {
+      "required": true
+    },
+    "PH_MYSQL_HOST": {
+      "required": true
+    },
+    "PH_MYSQL_PASSWORD": {
+      "required": true
+    },
+    "PH_MYSQL_USERNAME": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "RAILS_ENV": {
+      "required": true
+    },
+    "RAILS_LOG_TO_STDOUT": {
+      "required": true
+    },
+    "RAILS_SERVE_STATIC_FILES": {
+      "required": true
+    },
+    "SECRET_KEY_BASE": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    },
+    "worker": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
