@@ -1,11 +1,4 @@
-<div class="overlay-group container-fluid" style="min-height: 739px">
-  <style type='text/css'>
-    
-    .btn{
-      border: none;
-      color: white;
-    }
-  </style>
+<div id="home-container" class="overlay-group container-fluid">
   <div style="position: absolute; top: 0px; left: 0px; height: 100%">
     <div class="tile col-lg-6 col-ms-6 col-sm-12 col-xs-12" id="tile-top-left">
         <iframe style="width: 100%; display: block; height: 100%;" src="https://www.youtube.com/embed/iV1CDKhDCfY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -14,7 +7,7 @@
     <div class="tile col-lg-6 col-ms-6 col-sm-12 col-xs-12" id="tile-top-right">
       <div class="tile-wrapper">
         <h2><strong>Simple Solutions <br /> to Complex Problems</strong></h2>
-        <%= link_to  about_path, style: "background-color: rgb(92,143,118); border-radius: 3px;", class: "btn btn-lg" do %>
+        <%= link_to  about_path, class: "about-btn btn btn-lg" do %>
           <strong>About Us</strong>
         <% end %>
       </div>
@@ -45,7 +38,7 @@
         <p>
           <strong>Engage with our vibrant community of over 400 members, and accelerate your leaning through our Interest Groups.</strong>
         </p>
-        <%= link_to navigate_slack_pages_path, style: 'background-color: rgb(234,84,131); border-radius: 3px;', class: 'btn btn-lg' do %>
+        <%= link_to navigate_slack_pages_path, class: 'slack-btn btn btn-lg' do %>
           <strong>Join Slack!</strong>
         <% end %>
       </div>
